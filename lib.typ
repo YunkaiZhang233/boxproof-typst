@@ -45,7 +45,7 @@
     for line in boxes.pos() {
       assert.eq(type(line), function)
       let (counter_, x) = line(counter)
-      result.push(align(center + horizon, x))
+      result.push(align(center + top, x))
       counter = counter_
     }
 
